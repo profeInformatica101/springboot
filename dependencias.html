@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dependencias de Spring Boot</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1>Dependencias de Spring Boot</h1>
+        <p>
+            Este es un resumen de las dependencias más comunes que puedes añadir a tu proyecto de Spring Boot.
+            Para más detalles y configuración personalizada, visita <a href="https://start.spring.io/">Spring Initializr</a>.
+        </p>
+
+        <div id="accordion">
+
+            <!-- Núcleo y Web -->
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseNucleoWeb">
+                        Núcleo y Web
+                    </a>
+                </div>
+                <div id="collapseNucleoWeb" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>spring-boot-starter: Proporciona el núcleo de Spring Boot, incluida la autoconfiguración y el soporte para archivos YAML.</li>
+                            <li>spring-boot-starter-web: Facilita el desarrollo de aplicaciones web.</li>
+                            <li>spring-boot-starter-web-services: Pensado para la creación de servicios web SOAP.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+  <!-- Acceso a Datos -->
+  <div class="card">
+    <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseAccesoDatos">
+            Acceso a Datos
+        </a>
+    </div>
+    <div id="collapseAccesoDatos" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <ul>
+                <li><strong>spring-boot-starter-data-jpa</strong>: Proporciona soporte para el mapeo objeto-relacional con Spring Data JPA y Hibernate.</li>
+                <li><strong>spring-boot-starter-data-mongodb</strong>: Pensado para interactuar con bases de datos MongoDB.</li>
+                <li><strong>spring-boot-starter-data-redis</strong>: Ofrece soporte para trabajar con bases de datos Redis.</li>
+                <li><strong>spring-boot-starter-data-cassandra</strong>: Permite la integración con bases de datos Cassandra.</li>
+                <li><strong>spring-boot-starter-data-elasticsearch</strong>: Facilita la interacción con servidores Elasticsearch.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+             <!-- Seguridad -->
+             <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseSeguridad">
+                        Seguridad
+                    </a>
+                </div>
+                <div id="collapseSeguridad" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>spring-boot-starter-security: Integra Spring Security para proveer características de autenticación y autorización.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+         <!-- Plantillas y Vistas -->
+         <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapsePlantillasVistas">
+                    Plantillas y Vistas
+                </a>
+            </div>
+            <div id="collapsePlantillasVistas" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li><strong>spring-boot-starter-thymeleaf</strong>: Permite usar Thymeleaf como motor de plantillas.</li>
+                        <li><strong>spring-boot-starter-freemarker</strong>: Integra el motor de plantillas FreeMarker.</li>
+                    </ul>
+                
+                </div>
+            </div>
+        </div>
+
+        <!-- ... -->
+
+        <!-- Herramientas para Desarrolladores -->
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseHerramientasDesarrolladores">
+                    Herramientas para Desarrolladores
+                </a>
+            </div>
+            <div id="collapseHerramientasDesarrolladores" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li><strong>spring-boot-devtools</strong>: Facilita el desarrollo proporcionando recarga automática de clases y otros recursos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Streaming de Datos -->
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseStreamingDatos">
+                    Streaming de Datos
+                </a>
+            </div>
+            <div id="collapseStreamingDatos" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li><strong>spring-boot-starter-stream-kafka</strong>: Para aplicaciones que usan Apache Kafka para el streaming de datos.</li>
+                        <li><strong>spring-boot-starter-stream-rabbit</strong>: Para aplicaciones que usan RabbitMQ para el streaming de datos.</li>
+                    </ul>
+                
+                </div>
+            </div>
+        </div>
+
+        <!-- Cliente HTTP -->
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseClienteHTTP">
+                    Cliente HTTP
+                </a>
+            </div>
+            <div id="collapseClienteHTTP" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <!-- Tu contenido aquí -->
+                    <ul>
+                        <li><strong>spring-boot-starter-webclient</strong>: Facilita el uso de WebClient para realizar peticiones HTTP de forma reactiva.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!-- Datos Reactivos -->
+<div class="card">
+    <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseDatosReactivos">
+            Datos Reactivos
+        </a>
+    </div>
+    <div id="collapseDatosReactivos" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <ul>
+                <li><strong>spring-boot-starter-data-mongodb-reactive</strong>: Ofrece soporte para trabajar con MongoDB de manera reactiva.</li>
+                <li><strong>spring-boot-starter-data-cassandra-reactive</strong>: Permite usar bases de datos Cassandra de manera reactiva.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Web Reactiva -->
+<div class="card">
+    <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseWebReactiva">
+            Web Reactiva
+        </a>
+    </div>
+    <div id="collapseWebReactiva" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <ul>
+                <li><strong>spring-boot-starter-webflux</strong>: Para construir aplicaciones web reactivas.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Mensajería y Eventos -->
+<div class="card">
+    <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseMensajeriaEventos">
+            Mensajería y Eventos
+        </a>
+    </div>
+    <div id="collapseMensajeriaEventos" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <ul>
+                <li><strong>spring-boot-starter-amqp</strong>: Proporciona el soporte necesario para la mensajería AMQP, como RabbitMQ.</li>
+                <li><strong>spring-boot-starter-websocket</strong>: Ofrece soporte para trabajar con WebSockets.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Actuadores y Monitorización -->
+<div class="card">
+    <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseActuadoresMonitorizacion">
+            Actuadores y Monitorización
+        </a>
+    </div>
+    <div id="collapseActuadoresMonitorizacion" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <ul>
+                <li><strong>spring-boot-starter-actuator</strong>: Proporciona endpoints de actuación y métricas para monitorizar la aplicación.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Pruebas -->
+<div class="card">
+    <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapsePruebas">
+            Pruebas
+        </a>
+    </div>
+    <div id="collapsePruebas" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <ul>
+                <li><strong>spring-boot-starter-test</strong>: Agrupa diversas bibliotecas útiles para pruebas, como JUnit, Mockito y Hamcrest.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Correo Electrónico -->
+<div class="card">
+    <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseCorreoElectronico">
+            Correo Electrónico
+        </a>
+    </div>
+    <div id="collapseCorreoElectronico" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <ul>
+                <li><strong>spring-boot-starter-mail</strong>: Facilita el envío de correos electrónicos a través del servicio de correo JavaMail.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Servidores Web Alternativos -->
+<div class="card">
+    <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseServidoresWebAlternativos">
+            Servidores Web Alternativos
+        </a>
+    </div>
+    <div id="collapseServidoresWebAlternativos" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+            <ul>
+                <li><strong>spring-boot-starter-jetty</strong>: Utiliza Jetty como servidor web.</li>
+                <li><strong>spring-boot-starter-undertow</strong>: Utiliza Undertow como el servidor web.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+        </div> <!-- Fin del acordeón -->
+    </div>
+
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

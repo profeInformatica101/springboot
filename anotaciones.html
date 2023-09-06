@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anotaciones de Spring Boot</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1>Anotaciones de Spring Boot</h1>
+
+        <div id="accordion">
+
+            <!-- Configuración General -->
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        Configuración General
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p><strong>@SpringBootApplication:</strong> Indica un punto de entrada para la aplicación Spring Boot. Combina @Configuration, @EnableAutoConfiguration y @ComponentScan.</p>
+                        <p><strong>@Configuration:</strong> Indica que una clase declara uno o más métodos @Bean y que los contenedores de Spring deben procesar estos métodos para generar nuevas bean definitions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Componentes -->
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        Componentes
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p><strong>@Component:</strong> Indica que una clase es un componente Spring y será instanciada automáticamente como un bean.</p>
+                        <p><strong>@Service:</strong> Indica que una clase es un servicio y debe ser instanciada automáticamente como un bean.</p>
+                        <p><strong>@Repository:</strong> Indica que una clase es un repositorio y su objetivo es encapsular el conjunto de objetos almacenados en una base de datos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controladores y Respuestas HTTP -->
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        Controladores y Respuestas HTTP
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p><strong>@RestController:</strong> Usada en clases para indicar que son controladores de Spring MVC que devuelven datos directamente al cuerpo de la respuesta.</p>
+                        <p><strong>@RequestMapping:</strong> Asigna las solicitudes HTTP a métodos de los controladores en Spring MVC.</p>
+                        <p><strong>@GetMapping, @PostMapping, @PutMapping, @DeleteMapping:</strong> Variaciones de @RequestMapping para diferentes tipos de métodos HTTP.</p>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- Inyección de Dependencia -->
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                                    Inyección de Dependencia
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p><strong>@Autowired:</strong> Inyecta automáticamente un bean en un campo, constructor o método.</p>
+                                    <p><strong>@Qualifier:</strong> Se utiliza para desambiguar múltiples beans de un mismo tipo durante la inyección de dependencias.</p>
+                                    <p><strong>@Value:</strong> Permite inyectar valores desde archivos de propiedades en campos o métodos.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Otras Anotaciones Útiles -->
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                                    Otras Anotaciones Útiles
+                                </a>
+                            </div>
+                            <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p><strong>@PathVariable:</strong> Utilizado en métodos de controlador para extraer valores de variables de la URI.</p>
+                                    <p><strong>@RequestParam:</strong> Utilizado en métodos de controlador para extraer parámetros de la cadena de consulta de la URI.</p>
+                                    <p><strong>@RequestBody:</strong> Usada en métodos de un controlador para indicar que un parámetro debe estar vinculado al cuerpo de la solicitud HTTP.</p>
+                                    <p><strong>@ControllerAdvice:</strong> Utilizada para definir clases de asesoramiento a nivel global para el manejo de excepciones y el enlace de datos.</p>
+                                    <p><strong>@ExceptionHandler:</strong> Utilizado dentro de clases anotadas con @Controller o @ControllerAdvice para definir métodos de manejo de excepciones.</p>
+                                    <p><strong>@Scheduled:</strong> Utilizada para indicar que un método debe ser ejecutado en intervalos de tiempo o en un momento específico.</p>
+                                    <p><strong>@Profile:</strong> Indica que un componente o una configuración deben estar activos solo en un perfil específico.</p>
+                                    <p><strong>@Primary:</strong> Indica que un bean debe tener prioridad cuando hay múltiples beans del mismo tipo.</p>
+                                    <p><strong>@Lazy:</strong> Indica que un bean se inicializará solo cuando se haga referencia a él por primera vez.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
